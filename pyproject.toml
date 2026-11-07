@@ -1,0 +1,24 @@
+[project]
+name = "fastapi-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "PRADEEPKUMARBC", email = "pradeepkumarbc138@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastapi>=0.162.2",
+    "fastapi-users[sqlalchemy]>=15.0.5",
+    "imagekitio>=5.12.0",
+    "python-dotenv>=1.2.4",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+fastapi-project = "fastapi_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
